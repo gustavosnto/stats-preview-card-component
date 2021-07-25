@@ -1,0 +1,76 @@
+header {
+    & .container {
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & .middle {
+            width: 100%;
+            background-color: $darkDesaturated;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 10px;
+
+            & .content {
+                flex-basis: 50%;
+                padding: 60px 100px 60px 40px;
+
+                & h1 {
+                    font-size: 2.3em;
+                    line-height: 1;
+                    margin-bottom: 20px;
+
+                    & b {
+                        color: $softViolet;
+                    }
+                }
+
+                & p {
+                    font-size: 1em;
+                    line-height: 1.8;
+                    color: $grey;
+                }
+
+                & .infos {
+                    width: calc(100% - 80px);
+                    margin-top: 70px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    & .inf-content {
+                        & h2, p {
+                            text-transform: uppercase;
+                        }
+
+                        & > p {
+                            color: $grey;
+                            margin-top: 5px;
+                            font-family: 'Lexend Deca', sans-serif;
+                            font-size: .875em;
+                        }
+                    }
+                }
+            }
+
+            & .bg-people {
+                flex-basis: 50%;
+                background-image: url(../images/image-header-desktop.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 0px 10px 10px 0px;
+
+                & .ov-bg {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #981ee4;
+                    opacity: 40%;
+                }
+            }
+        }
+    }
+}
